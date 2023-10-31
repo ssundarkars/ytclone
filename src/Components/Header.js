@@ -1,8 +1,7 @@
 import React, { useRef ,useEffect} from 'react'
 import './HeaderCss.css'
 import { Triangle } from './miniComp'
-import SearchPage from './searchPage';
-// const APIKEY='AIzaSyCSB1qg-UP1DPgyxndaq3gSdrQrTiMf9T0';
+
 function Header(props) {
     const queryField=useRef(null);
     function Search(event){

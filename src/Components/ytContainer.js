@@ -4,7 +4,6 @@ import VdoListContainer from './vidSgnContainer';
 import './ytContainerCss.css'
 import CommentBox from './commentContainer'
 function ytContainer(props) {
-  // console.log(props,'inskdjhskjdlkf');
     return (
     <div className='main-ytContainer'>
         <PlayerAndComp element={props.element}/>

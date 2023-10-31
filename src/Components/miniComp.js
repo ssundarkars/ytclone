@@ -68,7 +68,7 @@ export function Horizontal(props) {
 
 export function PlaySymbol(props) {
     const symbol={
-        display:'grid',
+        // display:'grid',
         width:undefined,
         height:undefined,
         borderRadius: '50%',

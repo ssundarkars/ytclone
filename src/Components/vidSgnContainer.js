@@ -7,6 +7,7 @@ function vidSgnContainer() {
 
     return (
     <div className='vidContainer' >
+      {/* <VidList/>
       <VidList/>
       <VidList/>
       <VidList/>
@@ -41,8 +42,12 @@ function vidSgnContainer() {
       <VidList/>
       <VidList/>
       <VidList/>
-      <VidList/>
-      <VidList/>
+      <VidList/> */}
+      (
+        for(let a=0;a=10;a++){
+          <VidList/> 
+        }
+      )
 
 
 
