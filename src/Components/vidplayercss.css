@@ -1,0 +1,96 @@
+
+
+.vid,.vid1{
+    width: 98%;
+    margin: 10px 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    min-width: 380px;
+    min-height: 210px;
+    aspect-ratio: 16/9;
+}
+.container{
+    /* background-image: linear-gradient(rgba(14, 72, 198),rgb(180, 20, 233)); */
+    /* z-index: -2; */
+    /* border: 1px solid red; */
+    position: relative;
+
+
+}
+.Video-player{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 15px;
+
+
+}
+@media  screen and (max-width:450px) {
+    .vid-footer{
+        width: fit-content;
+        visibility: hidden;
+    }
+    .side{
+        margin: 3px 2px 0px 2px;   
+    }
+    .side>div{
+        margin: 0px 3px;
+    }
+}
+
+.fullscreen{
+    width:100%;
+    height: 40%;
+    border: 2px solid white;
+    
+}
+.vid-footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.progress-bar-holder{
+    width: auto;
+    background-color: aqua;
+    height: 3px;
+    margin: 0px 10px;
+    grid-column: 1/3;
+}
+
+.left{
+    display: flex;
+    margin-left: 5px;
+}
+.right{
+    display: flex;
+    margin-right: 5px;
+    justify-content: flex-end;
+}
+
+.side>div{
+    margin: 0px 5px;
+}
+.next *{
+    margin:0px;
+    padding: 0px;
+
+}
+.volume{
+    font-size: 25px;
+    font-weight: 900;
+    margin: 5px;
+}
+.side>*>*:hover{
+    transform: scale(110%);
+    cursor:pointer;
+}

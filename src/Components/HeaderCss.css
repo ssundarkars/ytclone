@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Oswald:wght@300;400;500;600&display=swap');
+
+
+.Header{
+    height:45px;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.927);
+    padding: 7px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    position: sticky;
+    top:0px;
+    z-index: 1;
+
+}
+.Header>*{
+    margin: 2vw;
+}
+form,.logo{
+    display: flex;
+}
+
+.icon{
+    width:27px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: red;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.name{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 1.4rem;
+    margin: 0px 3px;
+    letter-spacing:-1px;
+    font-weight: 500;
+    line-height:1rem;
+}
+
+
+input{
+    width:28vw;
+    height: 40px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 0px 15px;
+    font-size: 1.2rem;
+    background-color: rgb(42, 43, 43);
+    border: none;
+    color: aliceblue;
+}
+input:focus{
+    border: none;
+}
+.searchBtn{
+    padding: 0px 25px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.myProfile{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    color: rgb(10, 29, 126);
+    background-color: rgb(53, 208, 6);
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

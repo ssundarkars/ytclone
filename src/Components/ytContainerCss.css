@@ -1,0 +1,22 @@
+.main-ytContainer{
+    display: grid;
+    grid-template-columns: 70% 25%;
+    margin-top: 10px ;
+    margin-left: 2vw;
+    position: relative;
+    
+}
+
+@media screen and (max-width:1000px) {
+    .main-ytContainer{
+        grid-template-columns: 100%;
+    }
+
+}
+@media screen and (min-width:1000px) {
+    .outer-container{
+        position: absolute;
+        top:max(57vw,70vh);
+    }
+
+}

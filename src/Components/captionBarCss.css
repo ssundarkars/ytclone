@@ -1,0 +1,137 @@
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 10px;
+    justify-content: space-between;
+    max-width: 97%;
+
+}
+
+.info-box, .Interaction{
+    display: flex;
+    margin-top: 10px;
+    width: auto;
+    height: 40px;
+    /* border: 2px solid red; */
+    align-items: center;
+
+}
+
+.channel-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #44d;
+}
+.channel{
+    display: flex;
+    margin: 12px 5px;
+    flex-direction: column;
+}
+.channel> h3,h5{
+    line-height: none;
+    margin: 2px 5px;
+}
+.channel>h3{
+    font-size: medium;
+}
+.channel>h5{
+    font-weight: 600;
+    color: #666;
+}
+button{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px ;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    background-color: #777;
+    color:white;
+
+}
+.Subscribe, .share,.Unsubscribe{
+    border-radius: 20px;
+}
+.Subscribe{
+    color: #333;
+    background-color: #bbb;
+}
+.Subscribe:hover{
+    background-color: #ccc;
+}
+.Unsubscribe{
+    background-color: #777;
+    color:white;
+}
+.Unsubscribe:hover{
+    background-color:#555;
+}
+button:hover{
+    background-color:#555;
+}
+.like,.unlike{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    justify-self: flex-end;
+    margin-right: 0px;
+}
+.like,.dislike{
+    background-color: #171717d2;
+    color:white;
+}
+.dislike,.not-dislike{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left:0px ;
+}
+.share{
+    margin: 5px;
+}
+
+
+.more{
+    border-radius: 50%;
+    /* font-weight: 900; */
+    /* font-size: 20px; */
+    padding:10px 12px;
+}
+
+
+.outer-disc{
+    max-width: 98%;
+    margin: 10px;
+    background-color: #545454be;
+    padding: 15px;
+    border-radius: 10px;
+}
+.head-line{
+    display: flex;
+}
+.head-line>div{
+    margin-right: 10px;
+    margin-bottom:5px ;
+    font-weight: bold;
+
+}
+/* .content{
+    width:95%;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    display: inline-block;
+} */
+
+@media screen and (max-width:1600px) {
+    .content{
+        width:95%;
+        white-space:nowrap;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        display: inline-block;
+    }
+}
+.outer-disc>a{
+    color:blue;
+}
+

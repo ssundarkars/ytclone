@@ -1,0 +1,55 @@
+.list-item{
+    height: 110px;
+    margin: 0px 5px 5px 0px;
+    width: auto;
+    display: grid;
+    grid-template-columns: 180px auto;
+    gap: 5px;
+}
+.vid-preview{
+    height: 100%;
+    width: 180px;
+    background-color: brown;
+    display: flex;
+    border-radius:10px ;
+    flex-direction: row-reverse;
+    align-items: end;
+    
+
+}
+.duration{
+    background-color: rgba(0, 0, 0, 0.74);
+    height: 15%;
+    width: 15%;
+    color: white;
+    padding: 1px 3px;
+    font-size: small;
+    margin:  10px;
+    
+}
+
+
+@media screen and (min-width:1001px) {
+    .title{
+        width: 15vw;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.title{
+    font-weight: bold;
+    margin: 5px 0px;
+} 
+.channel-name-list, .time-upload-list, .views-list{
+    font-size: smaller;
+    font-weight: 400;
+    /* border:2px solid red; */
+    margin: 5px 10px 0pc 0px;
+}
+
+.time-upload-list, .views-list{
+    display: flexbox;
+    width: fit-content;
+}
