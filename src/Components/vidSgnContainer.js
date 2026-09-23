@@ -4,53 +4,14 @@ import './vidSgnContainerCss.css'
 
 
 function vidSgnContainer() {
-
+  var component=[];
+  for(let a=0;a<=10;a++){
+    component.push(<VidList/>); 
+  }
     return (
     <div className='vidContainer' >
-      {/* <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/>
-      <VidList/> */}
-      (
-        for(let a=0;a=10;a++){
-          <VidList/> 
-        }
-      )
-
-
-
+      {component}
+     
     </div>
   )
 }

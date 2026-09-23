@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import VidContainer from './vidSgnContainer'
+// import VidContainer from './vidSgnContainer'
 import SearchResult from './searchResultVds'
 // import FetchVideoData from './FetchVideoData'
 import APIKEY from './API';
 function SearchPage(props) {
     // const fetchData = 
-    const [data, setData] = useState(undefined);
+    const [data, setData] = useState();
     // const [forReturn, setForReturn]=useState(undefined);
     function returnSetter(value){
         console.log(value,'valueinsearchPage');
@@ -14,16 +14,12 @@ function SearchPage(props) {
     useEffect(() => {
         // fetchData(url);
         async function Fetch() {
-
-
-            // const APIKEY = 'AIzaSyCSB1qg-UP1DPgyxndaq3gSdrQrTiMf9T0';
-            // var url = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${props.searchRequest}&key=${APIKEY}`
             var url = `https://www.googleapis.com/youtube/v3/search?key=${APIKEY}&part=snippet&maxResults=25&q=${props.searchRequest}`;
             //console.log('Fetching called for', props.searchRequest)
             try {
                 var result = await fetch(url);
                 result = await result.json();
-                //console.log('result', result.items);
+                console.log('result', result.items);
                 setData(result.items);
             }
             catch (error) {

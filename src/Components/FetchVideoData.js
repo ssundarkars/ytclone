@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
-const APIKEY='AIzaSyCSB1qg-UP1DPgyxndaq3gSdrQrTiMf9T0';
+import App from '../App';
+import APIKEY from './API';
 
 function Search(props){
     var url = `https://www.googleapis.com/youtube/v3/search?key=${APIKEY}&maxResults=25&q=${props.inputContent}`;

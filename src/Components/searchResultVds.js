@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import './searchResultVdsCss.css'
-import YoutubePlayer from './youtubePlayer';
-import YtContainer from './ytContainer';
+// import YoutubePlayer from './youtubePlayer';
+// import YtContainer from './ytContainer';
 import APIKEY from './API';
 
-
-
 function SearchList(props) {
-    const [video,setVideo] = useState();
-    //console.log(props.element,'element');
+    const [video,setVideo] = useState(undefined);
+    console.log(props.element,'element');
     const videoId=props.element.id.videoId;
     const itemSnippet=props.element.snippet;
     var url=`https://www.googleapis.com/youtube/v3/videos?key=${APIKEY}&part=snippet,player,contentDetails,statistics&maxResults=1&id=${videoId}`;    

@@ -3,11 +3,11 @@ import MainContainer from './Components/ytContainer'
 import Header from './Components/Header';
 import SearchPage from './Components/searchPage'
 import { useEffect, useState } from 'react';
-import commentContainer from './Components/commentContainer';
+
 
 
 function App() {
-    const [searchInput,setSearchInput] = useState('');
+    const [searchInput,setSearchInput] = useState('Tech News In AI Domain');
     const [video,setVideo]=useState();
     const [player,setPlayer]=useState(false);
     function updateSearchInput(input){
@@ -22,7 +22,7 @@ function App() {
     useEffect(()=>{
         function callPlayer(){
             console.log(video,'videotoggler')
-            if (video!=undefined){
+            if (video!==undefined){
             setPlayer(true);
             }
 
@@ -38,7 +38,6 @@ function App() {
         <div className='Main'>
             {console.log(player,'player')}
             <Header inputText={updateSearchInput}></Header>
-            {/* <MainContainer searchRequest={searchInput} /> */}
             {player===true?<MainContainer element={video}></MainContainer>:<SearchPage dataValue={updatePlayer} searchRequest={searchInput} />}
         </div>
     );
