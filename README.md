@@ -73,3 +73,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ## Disclaimer
 
 Project is incomplete, all the functionalities are not working as expected. 
+The project is the initial build exploring React learnings.
