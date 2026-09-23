@@ -4,15 +4,17 @@ import VdoListContainer from './vidSgnContainer';
 import './ytContainerCss.css'
 import CommentBox from './commentContainer'
 function ytContainer(props) {
-    return (
+  return (
     <div className='main-ytContainer'>
-        <PlayerAndComp element={props.element}/>
-        <VdoListContainer /> 
+      <div className='left-content'>
+        <PlayerAndComp element={props.element} />
         <div className='outer-container'>
-        <CommentBox videoId={props.element.videoId}/>
+          <CommentBox videoId={props.element.videoId} />
         </div>
+      </div>
+      <VdoListContainer />
     </div>
   )
 }
- 
+
 export default ytContainer
